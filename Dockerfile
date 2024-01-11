@@ -15,4 +15,4 @@ WORKDIR /usr/src/app/
 EXPOSE 8080
 
 # Especificar el comando para ejecutar la aplicación con Maven
-CMD ["mvn", "-e", "spring-boot:run"]
+# CMD ["mvn", "-e", "spring-boot:run"]
