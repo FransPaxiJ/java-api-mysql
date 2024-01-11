@@ -14,5 +14,12 @@ WORKDIR /usr/src/app/
 # Exponer el puerto 8080
 EXPOSE 8080
 
+RUN mvn -version
+
+RUN mvn clean package
+
+RUN mvn clean install
+
+RUN mvn -e spring-boot:run
 # Especificar el comando para ejecutar la aplicación con Maven
 # CMD ["mvn", "-e", "spring-boot:run"]
