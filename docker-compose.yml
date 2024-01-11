@@ -6,6 +6,10 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
+    environment: # Añade las variables de entorno aquí
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/curso
+      SPRING_DATASOURCE_USERNAME: franspaxi
+      SPRING_DATASOURCE_PASSWORD: admin  
     depends_on:
       - db
   db:
